@@ -3,12 +3,12 @@
 ## Lab objectives: 
 * Introduce provisioners
 * Update template to use new provisioners   
-* Update template to use variables
 
 ### Using provisioners   
-Enter your working directory: 
+Create and enter your working directory: 
 ```sh
-cd ~/$(date +%Y%m%d)/packer
+mkdirp -p ~/$(date +%Y%m%d)/packer/lab2
+cd ~/$(date +%Y%m%d)/packer/lab2
 ```
 Packer can customize your image using provisioners. This lab is going to introduce you to the `file` and `shell` provisioners.
 
@@ -122,9 +122,17 @@ The output from the provisioner is too verbose to include in this tutorial, sinc
 
 If you were to launch this AMI, Redis would be pre-installed.
 
-### Update variables
+## Congrats!
 
-In this section you will modify the template to generate a unique AMI name.
+### Update template to use variables
+
+In this section you will modify the template from the last lab to generate a unique AMI name.
+
+Create and enter a new working directory
+```sh
+mkdirp -p ~/$(date +%Y%m%d)/packer/lab3
+cd ~/$(date +%Y%m%d)/packer/lab3
+```
 
 Add the following variable block to your template   
 ```hcl
