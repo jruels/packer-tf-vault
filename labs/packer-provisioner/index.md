@@ -164,8 +164,7 @@ source "amazon-ebs" "ubuntu" {
 ### Build image
 
 Build the image.
-
-```hcl
+```sh
 packer build firstrun.pkr.hcl
 ```
 
@@ -183,7 +182,7 @@ ami_prefix = "packer-aws-redis-var"
 ```
 
 Build the image with the `--var-file` flag.
-```hcl
+```sh
 packer build --var-file=firstrun.pkrvars.hcl firstrun.pkr.hcl
 ```
 
