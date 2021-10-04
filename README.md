@@ -13,6 +13,8 @@ This site includes the slides and labs for the Packer, Terraform, and Vault clas
 Lab 0: [Setup environment](labs/lab-setup/)   
 Lab 1: [Build Packer image](labs/packer-build)   
 Lab 2: [Packer Provisioners](labs/packer-provisioner)   
+
+### Day 2   
 Lab 3: [Create a resource](labs/tf-first-instance)   
 Lab 4: [Variables and output](labs/tf-variables-and-output)   
 Lab 5: [Multi resource deployment](labs/tf-more-variables)   
@@ -22,4 +24,4 @@ Lab 8: [Import existing resources](labs/tf-import)
 Lab 9: [Provisioners](labs/tf-provisioner)   
 Lab 10: [Use registry modules](labs/tf-module)   
 Lab 11: [Write your own module](labs/tf-write-module)   
-Lab 12: [Capstone](labs/capstone)   
+
