@@ -11,4 +11,4 @@ This site includes the slides and labs for the Packer, Terraform, and Vault clas
 Lab 0: [Setup environment](labs/lab-setup/)   
 Lab 1: [Build Packer image](labs/packer-build)   
 Lab 2: [Packer Provisioners](labs/packer-provisioner)   
-Lab 2: [Packer Variables](labs/packer-variables)   
+Lab 3: [Packer Variables](labs/packer-variables)   
