@@ -2,8 +2,9 @@
 
 ## Lab objectives: 
 * Introduce provisioners
-* Update template to use new provisioners
-### Using provisioners
+* Update template to use new provisioners   
+
+### Using provisioners   
 Enter your working directory: 
 ```sh
 cd ~/$(date +%Y%m%d)/packer
