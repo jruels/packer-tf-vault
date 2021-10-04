@@ -10,7 +10,7 @@ In this section you will modify the template from the last lab to generate a uni
 
 Create and enter a new working directory
 ```sh
-mkdirp -p ~/$(date +%Y%m%d)/packer/lab3
+mkdir -p ~/$(date +%Y%m%d)/packer/lab3
 cd ~/$(date +%Y%m%d)/packer/lab3
 ```
 
