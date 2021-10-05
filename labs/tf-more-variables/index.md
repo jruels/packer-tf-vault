@@ -5,6 +5,8 @@ In this lab, you will use Terraform to deploy a web application on AWS. The infr
 
 Input variables make Terraform configurations more flexible by defining values that can be set by users. You will parameterize this configuration with Terraform input variables. 
 
+**NOTE: If you run out of disk space remove the `.terraform` directory from previous labs**
+
 ## Setup lab files 
 Under our working directory create a `tf-lab3` directory:
 ```sh
@@ -100,3 +102,10 @@ Now Terraform will convert the values into the correct type. The `instance_count
 
 Once again the variables added have the same values as the original hard-coded values. Run `terraform apply` and you'll see it does not need to make any changes.
 
+# Cleanup
+Destroy the infrastructure you created
+```sh
+terraform destroy -auto-approve
+```
+
+# Congrats!

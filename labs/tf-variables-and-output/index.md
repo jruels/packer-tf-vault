@@ -3,6 +3,8 @@
 ## Overview 
 In this lab you will update the existing `main.tf` file to use variables. 
 
+**NOTE: If you run out of disk space remove the `.terraform` directory from previous labs**
+
 ## Set the instance name with a variable
 Under our working directory create a `tf-lab2` directory and copy `main.tf` to our new directory: 
 ```sh
@@ -86,3 +88,11 @@ instance_public_ip = "54.186.202.254"
 
 You can use Terraform outputs to connect Terraform projects with other parts of your infrastructure or CICD pipelines. 
 
+
+# Cleanup
+Destroy the infrastructure you created
+```sh
+terraform destroy -auto-approve
+```
+
+# Congrats!

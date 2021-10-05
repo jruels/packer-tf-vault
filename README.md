@@ -4,6 +4,7 @@ This site includes the slides and labs for the Packer, Terraform, and Vault clas
 
 ## Course Content   
 [Slides day 1](https://www.dropbox.com/s/q7p8deqmno9sglm/Day%201%20-%20Packer%20Terraform%20Vault.pdf?dl=0)
+[Slides day 2](https://www.dropbox.com/s/914ql5yz1mugri4/Day%202%20-%20Packer%20Terraform%20Vault.pdf?dl=0)
 
 
 ## Labs

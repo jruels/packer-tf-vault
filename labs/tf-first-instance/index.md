@@ -21,7 +21,7 @@ Confirm installation was successful
 terraform version 
 ```
 
-Output should be similar to: `Terraform v0.14.9`
+Output should be similar to: `Terraform v1.0.8`
 
 ## Create Terraform configuration
 Create a directory for the lab 1 files:
@@ -160,4 +160,10 @@ In this case the plan is acceptable, so type `yes` at the confirmation prompt to
 
 
 
+# Cleanup
+Destroy the infrastructure you created 
+```sh
+terraform destroy -auto-approve
+```
 
+# Congrats! 
