@@ -373,7 +373,7 @@ The v2 of KV secrets engine supports a Check-And-Set operation to prevent uninte
 
 Display the secrets engine configuration settings.
 ```
- kubectl exec vault-0 --vault read secret/config
+ kubectl exec vault-0 -- vault read secret/config
 
 Key             Value
 ---             -----
@@ -390,7 +390,7 @@ kubectl exec vault-0 -- vault write secret/config cas-required=true
 
 Configure the secret at path `secret/partner` to enable Check-And-Set.
 ```
- kubectl exec vault-0 --vault kv metadata put -cas-required=true secret/partner
+ kubectl exec vault-0 -- vault kv metadata put -cas-required=true secret/partner
 ```
 
 Once check-and-set is enabled, every write operation requires the cas parameter with the current version of the secret. Set `cas` to `0` when a secret at that path does not already exist.
