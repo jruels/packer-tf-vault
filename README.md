@@ -27,9 +27,9 @@ Lab 11: [Use registry modules](labs/tf-module)
 Lab 12: [Write your own module](labs/tf-write-module)   
 Lab 13: [Capstone](labs/capstone)   
 
-### Day 3
-Lab 14: [Log into VM](labs/access-vms/)
-Lab 15: [Getting started with Vault](labs/install-vault)
-Lab 16: [Install Vault on EKS](labs/install-vault-eks)
-Lab 17: [Vault policies](labs/vault-policies/)
-Lab 18: [Vault secrets](labs/vault-secrets/)
+### Day 3   
+Lab 14: [Log into VM](labs/access-vms/)   
+Lab 15: [Getting started with Vault](labs/install-vault)   
+Lab 16: [Install Vault on EKS](labs/install-vault-eks)   
+Lab 17: [Vault policies](labs/vault-policies/)   
+Lab 18: [Vault secrets](labs/vault-secrets/)   
