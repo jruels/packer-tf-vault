@@ -14,7 +14,7 @@ The first thing we need to do is install Packer. To install the latest version (
 export VER="1.8.0"
 wget https://releases.hashicorp.com/packer/${VER}/packer_${VER}_linux_amd64.zip 
 unzip packer_${VER}_linux_amd64.zip
-mkdir $HOME/.local/bin
+mkdir -p $HOME/.local/bin
 mv packer $HOME/.local/bin
 ```
 ### The Template
