@@ -11,10 +11,11 @@ Packer can build images for many platforms other than AWS, but AWS requires no a
 ### Install Packer
 The first thing we need to do is install Packer. To install the latest version (1.7.6), run the following: 
 ```bash
-export VER="1.7.6"
+export VER="1.8.0"
 wget https://releases.hashicorp.com/packer/${VER}/packer_${VER}_linux_amd64.zip 
 unzip packer_${VER}_linux_amd64.zip
-sudo cp packer /usr/local/bin/
+mkdir $HOME/.local/bin
+mv packer $HOME/.local/bin
 ```
 ### The Template
 Create a working directory
