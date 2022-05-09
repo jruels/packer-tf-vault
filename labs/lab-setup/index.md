@@ -12,5 +12,11 @@ To log into the console go to [https://console.aws.amazon.com/](https://console.
 After selecting the `US-East-2` region, use the search bar at the top of the page to search for `CloudShell`. Click on the result shown in the screenshot.
 ![cloudshell](images/cloudshell.png)
 
+## Cleanup
+Remove any files from previous training sessions.
+```bash
+rm -rf * && rm -rf $HOME/.local
+```
+
 ## Congratulations
 You are now logged into the AWS CloudShell, and ready for future labs. 
