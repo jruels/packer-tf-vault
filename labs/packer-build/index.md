@@ -9,7 +9,7 @@
 Packer can build images for many platforms other than AWS, but AWS requires no additional software installed on your computer, and their free-tier makes it free to use for most people. This is why we chose to use AWS for the example. 
 
 ### Install Packer
-The first thing we need to do is install Packer. To install the latest version (1.7.6), run the following: 
+The first thing we need to do is install Packer. To install the latest version, run the following: 
 ```bash
 export VER="1.8.0"
 wget https://releases.hashicorp.com/packer/${VER}/packer_${VER}_linux_amd64.zip 
