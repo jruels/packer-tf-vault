@@ -18,5 +18,17 @@ Remove any files from previous training sessions.
 rm -rf * && rm -rf $HOME/.local
 ```
 
+## Update PATH
+We need to update the ``$PATH`` variable so our installed binaries override the defaults
+Open `$HOME/.bash_profile` in your favorite text editor
+``bash
+vim $HOME/.bash_profile
+```
+
+Replace the PATH line with this: 
+```bash
+PATH=$HOME/.local/bin:$HOME/bin:$PATH
+```
+
 ## Congratulations
 You are now logged into the AWS CloudShell, and ready for future labs. 
