@@ -1,4 +1,4 @@
-# Terraform Lab 5
+# Terraform Lab 6
 
 ## Overview
 In this lab you will create some AWS resources using the console, and then import them into Terraform management. 
@@ -27,7 +27,7 @@ mkdir tf-lab4
 Inside the new directory create a `main.tf` file and add a resource with the following attributes:
 - type: `aws_instance`
 - name: `tf-example-import`
-- ami: `ami-0742b4e673072066f`
+- ami: AMI from instances created above
 - instance_type: The type specified when creating the instance.
 - count: `3`
 - tags: `Name: TF-example-import`, `role: terraform`
@@ -37,7 +37,7 @@ Remember this resource block is for three instances. You will need to add the `c
 ## Import the configuration 
 Now that you've created the instances and the Terraform configuration, use the `terraform import` command to import the existing instances. 
 
-If you get stuck check the help page `terraform import --help` or the [terraform documentation]()
+If you get stuck check the help page `terraform import --help` or the [terraform documentation](https://www.terraform.io/docs/cli/import/index.html)
 
 
 

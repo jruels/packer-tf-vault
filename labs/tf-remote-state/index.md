@@ -1,4 +1,4 @@
-# Terraform Lab 4
+# Terraform Lab 5
 
 ## Overview 
 In this lab you will create an S3 bucket and migrate the Terraform state to a remote backend. 
@@ -10,7 +10,7 @@ In the `tf-lab3/learn-terraform-variables` directory create a new file `s3.tf` w
 
 ```hcl
 resource "aws_s3_bucket" "remote_state" {
-        bucket = "remote-state-jrs"
+    bucket = "remote-state-jrs"
     acl = "private"
     
     tags = {
@@ -33,7 +33,7 @@ Now that we've created an S3 bucket, we need to migrate the state to the remote 
 
 When creating the backend configuration remember to replace the `bucket` with the name of the bucket you created. 
 
-Create `backend.tf` with the following: 
+Create `backend.tf` with the following:
 ```hcl
 terraform {
   backend "s3" {
@@ -46,6 +46,8 @@ terraform {
 
 ## Reinitialize Terraform 
 Now that you have created the S3 bucket and configured the `backend.tf` you must run `terraform init` to migrate the state to the new remote backend. 
+
+If prompted to migrate the existing state type 'yes'
 
 If everything is successful you should see a message telling you the backend was migrated. 
 

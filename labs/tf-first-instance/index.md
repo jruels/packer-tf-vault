@@ -13,15 +13,13 @@ The AWS CloudShell does not have Terraform installed. To install the latest vers
 ```sh
 TER_VER=`curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
 wget https://releases.hashicorp.com/terraform/${TER_VER}/terraform_${TER_VER}_linux_amd64.zip
-unzip terraform_${TER_VER}_linux_amd64.zip && sudo mv terraform /usr/local/bin/
+unzip terraform_${TER_VER}_linux_amd64.zip && mkdir -p $HOME/.local/bin && mv terraform $HOME/.local/bin/
 ```
 
 Confirm installation was successful
 ```sh
 terraform version 
 ```
-
-Output should be similar to: `Terraform v1.0.8`
 
 ## Create Terraform configuration
 Create a directory for the lab 1 files:
@@ -42,7 +40,6 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
   region  = "us-west-2"
 }
 

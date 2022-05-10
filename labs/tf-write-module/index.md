@@ -1,4 +1,4 @@
-# Terraform Lab 8
+# Terraform Lab 9
 
 ## Overview
 In this lab, you will create a module to manage AWS S3 buckets used to host static websites.

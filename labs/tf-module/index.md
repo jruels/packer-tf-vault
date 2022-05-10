@@ -1,4 +1,4 @@
-# Terraform Lab 7
+# Terraform Lab 8
 
 ## Overview 
 In this lab, you will use modules from the Terraform Registry to provision an AWS environment. The concepts you use in this tutorial will apply to any modules from any source.
@@ -34,10 +34,10 @@ Enter the directory.
 cd learn-terraform-modules
 ```
 
-Check out the `ec2-instances` tag into a local branch.
+Check out the `ec2-blank` tag into a local branch.
 
 ```sh
-git checkout tags/ec2-instances -b ec2-instances
+git checkout tags/ec2-blank -b ec2-instances
 ```
 
 Review the `main.tf` and you will see it includes four blocks: 
@@ -45,12 +45,12 @@ Review the `main.tf` and you will see it includes four blocks:
 You will be familiar with the first two blocks, `terraform` and `provider`. We've used them many times in previous labs.
 
 - `module "vpc"` defines a Virtual Private Cloud (VPC), which will provide networking services for the rest of your infrastructure.
-- 'module` "ec2_instances"` defines two EC2 instances within your VPC.
+- `module "ec2_instances"` defines two EC2 instances within your VPC.
 
 ## Set values for module input variables
 In order to use most modules, you will need to pass input variables to the module configuration. The configuration that calls a module is responsible for setting its input values, which are passed as arguments in the module block. Aside from `source` and `version`, most of the arguments to a module block will set variable values.
 
-On the Terraform registry page for the AWS VPC module, you will see an `Inputs` tab that describes all of the [input variables]()https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/2.21.0?tab=inputs that module supports.
+On the Terraform registry page for the AWS VPC module, you will see an `Inputs` tab that describes all of the [input variables](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/2.21.0?tab=inputs) that module supports.
 
 Some input variables are required, meaning that the module doesn't provide a default value — an explicit value must be provided in order for Terraform to run correctly.
 
