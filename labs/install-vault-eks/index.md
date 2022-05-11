@@ -351,8 +351,8 @@ kubectl exec vault-0 -- vault write database/config/mysql \
 {% endraw %}
 
 
-```sh
 Create a database secrets engine role named `readonly`.
+```sh
 kubectl exec vault-0 -- vault write database/roles/readonly \
     db_name=mysql \
     creation_statements="CREATE USER '{{name}}'@'%' IDENTIFIED BY '{{password}}';GRANT SELECT ON *.* TO '{{name}}'@'%';" \
@@ -454,6 +454,7 @@ kubectl apply --filename internal-app.yaml
 ```
 
 Define a pod named `devwebapp` with the web application.
+{% raw %}
 ```sh
 cat > devwebapp.yaml <<EOF
 ---
@@ -480,6 +481,7 @@ spec:
       image: jweissig/app:0.0.1
 EOF
 ```
+{% endraw %}
 
 Create the `devwebapp` pod.
 ```sh
@@ -519,15 +521,4 @@ mysql -h my-release-mysql.default.svc.cluster.local --user=v-kubernetes-readonly
 ```
 
 # Congrats!
-
-
-
-
-
-
-
-
-
-
-
 
