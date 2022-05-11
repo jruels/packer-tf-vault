@@ -411,6 +411,12 @@ The `token_reviewer_jwt` and `kubernetes_ca_cert` are mounted to the container b
 
 For a client of the Vault server to read the credentials requires that the read capability be granted for the path `database/creds/readonly`.
 Write out the policy named `devwebapp` that enables the `read` capability for secrets at path `database/creds/readonly`.
+
+Exit the `vault-0` pod 
+```sh
+exit
+```
+
 ```sh
 vault policy write devwebapp - <<EOF
 path "database/creds/readonly" {
