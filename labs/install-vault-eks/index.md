@@ -20,7 +20,7 @@ cd $HOME/.local/bin
 
 ### Install kubectl
 ```sh
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/linux/amd64/kubectl
 chmod +x kubectl
 ```
 
