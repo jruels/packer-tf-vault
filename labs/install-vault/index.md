@@ -7,7 +7,7 @@ This lab explains how to install and get started with Vault.
 
 Download Vault binary   
 ```
-wget https://releases.hashicorp.com/vault/1.8.3/vault_1.8.3_linux_amd64.zip
+wget https://releases.hashicorp.com/vault/1.10.2/vault_1.10.2_linux_amd64.zip
 ```
 
 Install `unzip`   
@@ -17,12 +17,12 @@ sudo apt install -y unzip
 
 Extract Vault   
 ```
-unzip vault_1.8.3_linux_amd64.zip
+unzip vault_1.10.2_linux_amd64.zip
 ```
 
 Copy the binary into the `$PATH`   
 ```
-sudo cp vault /usr/local/bin/
+sudo cp vault $HOME/.local/bin
 ```
 
 Confirm Vault is installed correctly.   
