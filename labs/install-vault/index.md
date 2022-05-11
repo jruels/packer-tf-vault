@@ -22,7 +22,7 @@ unzip vault_1.10.2_linux_amd64.zip
 
 Copy the binary into the `$PATH`   
 ```
-sudo cp vault $HOME/.local/bin
+cp vault $HOME/.local/bin
 ```
 
 Confirm Vault is installed correctly.   
