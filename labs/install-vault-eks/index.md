@@ -339,15 +339,16 @@ Success! Enabled the database secrets engine at: database/
 ```
 
 Configure the database secrets engine with the connection credentials for the MySQL database.
-```sh
+{% raw %}
 kubectl exec vault-0 -- vault write database/config/mysql \
     plugin_name=mysql-database-plugin \
     connection_url="{{username}}:{{password}}@tcp(mysql.default.svc.cluster.local:3306)/" \
     allowed_roles="readonly" \
     username="root" \
     password="$ROOT_PASSWORD"
+{% endraw %}
 
-```
+
 ```sh
 Create a database secrets engine role named `readonly`.
 kubectl exec vault-0 -- vault write database/roles/readonly \
