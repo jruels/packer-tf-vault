@@ -110,7 +110,7 @@ Add the following to `variables.tf`
 - description: `Tags to apply to VPC resources`
 - type: `map(string)`
 - default: `{
-    Terraform   = "true"
+    Terraform   = "true",
     Environment = "dev"
   }`
 
